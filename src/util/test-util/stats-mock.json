@@ -1,0 +1,946 @@
+{
+  "rankedSkill": {
+    "overall": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "attack": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "defence": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "strength": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "hitpoints": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "ranged": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "prayer": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "magic": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "cooking": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "woodcutting": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "fletching": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "fishing": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "firemaking": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "crafting": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "smithing": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "mining": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "herblore": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "agility": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "thieving": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "slayer": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "farming": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "runecraft": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "hunter": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "construction": {
+      "experience": 123,
+      "level": 123,
+      "rank": 123
+    }
+  },
+  "noRankedSkill": {
+    "overall": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "attack": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "defence": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "strength": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "hitpoints": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "ranged": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "prayer": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "magic": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "cooking": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "woodcutting": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "fletching": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "fishing": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "firemaking": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "crafting": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "smithing": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "mining": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "herblore": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "agility": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "thieving": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "slayer": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "farming": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "runecraft": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "hunter": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    },
+    "construction": {
+      "experience": -1,
+      "level": -1,
+      "rank": -1
+    }
+  },
+  "statsRanked": {
+    "bosses": {
+      "abyssalSire": {
+        "rank": 3957,
+        "score": 910
+      },
+      "alchemicalHydra": {
+        "rank": 29495,
+        "score": 136
+      },
+      "barrowsChests": {
+        "rank": 62120,
+        "score": 178
+      },
+      "bryophyta": {
+        "rank": 42086,
+        "score": 1
+      },
+      "callisto": {
+        "rank": 42086,
+        "score": 1
+      },
+      "cerberus": {
+        "rank": 42086,
+        "score": 1
+      },
+      "chambersOfXeric": {
+        "rank": 11149,
+        "score": 456
+      },
+      "chambersOfXericChallengeMode": {
+        "rank": -1,
+        "score": -1
+      },
+      "chaosElemental": {
+        "rank": 4218,
+        "score": 157
+      },
+      "chaosFanatic": {
+        "rank": 33567,
+        "score": 30
+      },
+      "commanderZilyana": {
+        "rank": 12540,
+        "score": 283
+      },
+      "corporealBeast": {
+        "rank": 47194,
+        "score": 10
+      },
+      "crazyArchaeologist": {
+        "rank": 72282,
+        "score": 6
+      },
+      "dagannothPrime": {
+        "rank": 5876,
+        "score": 1084
+      },
+      "dagannothRex": {
+        "rank": 7254,
+        "score": 1110
+      },
+      "dagannothSupreme": {
+        "rank": 6762,
+        "score": 1006
+      },
+      "derangedArchaeologist": {
+        "rank": -1,
+        "score": -1
+      },
+      "generalGraardor": {
+        "rank": 29833,
+        "score": 240
+      },
+      "giantMole": {
+        "rank": 4105,
+        "score": 1100
+      },
+      "grotesqueGuardians": {
+        "rank": 41134,
+        "score": 30
+      },
+      "hespori": {
+        "rank": 21976,
+        "score": 45
+      },
+      "kalphiteQueen": {
+        "rank": 3275,
+        "score": 660
+      },
+      "kingBlackDragon": {
+        "rank": 43920,
+        "score": 187
+      },
+      "kraken": {
+        "rank": 29327,
+        "score": 1663
+      },
+      "kreeArra": {
+        "rank": 10155,
+        "score": 271
+      },
+      "krilTsutsaroth": {
+        "rank": 21394,
+        "score": 89
+      },
+      "mimic": {
+        "rank": 21394,
+        "score": 89
+      },
+      "nightmare": {
+        "rank": -1,
+        "score": -1
+      },
+      "obor": {
+        "rank": -1,
+        "score": -1
+      },
+      "sarachnis": {
+        "rank": -1,
+        "score": -1
+      },
+      "scorpia": {
+        "rank": 9421,
+        "score": 103
+      },
+      "skotizo": {
+        "rank": 75113,
+        "score": 11
+      },
+      "theCorruptedGauntlet": {
+        "rank": -1,
+        "score": -1
+      },
+      "theGauntlet": {
+        "rank": -1,
+        "score": -1
+      },
+      "theatreOfBlood": {
+        "rank": 13681,
+        "score": 1
+      },
+      "thermonuclearSmokeDevil": {
+        "rank": 47124,
+        "score": 37
+      },
+      "tzKalZuk": {
+        "rank": 1356,
+        "score": 2
+      },
+      "tzTokJad": {
+        "rank": 9792,
+        "score": 17
+      },
+      "venenatis": {
+        "rank": 79082,
+        "score": 1
+      },
+      "vetion": {
+        "rank": 49716,
+        "score": 1
+      },
+      "vorkath": {
+        "rank": 9046,
+        "score": 1160
+      },
+      "wintertodt": {
+        "rank": 29515,
+        "score": 525
+      },
+      "zalcano": {
+        "rank": -1,
+        "score": -1
+      },
+      "zulrah": {
+        "rank": 14328,
+        "score": 1750
+      }
+    },
+    "bountyHunter": {
+      "hunter": {
+        "rank": -1,
+        "score": -1
+      },
+      "rogue": {
+        "rank": -1,
+        "score": -1
+      }
+    },
+    "clues": {
+      "all": {
+        "rank": 3794,
+        "score": 1347
+      },
+      "beginner": {
+        "rank": -1,
+        "score": -1
+      },
+      "easy": {
+        "rank": 2358,
+        "score": 500
+      },
+      "elite": {
+        "rank": 8956,
+        "score": 84
+      },
+      "hard": {
+        "rank": 16509,
+        "score": 300
+      },
+      "master": {
+        "rank": 5902,
+        "score": 63
+      },
+      "medium": {
+        "rank": 10413,
+        "score": 400
+      }
+    },
+    "lastManStanding": {
+      "rank": -1,
+      "score": -1
+    },
+    "leaguePoints": {
+      "rank": -1,
+      "score": -1
+    },
+    "skills": {
+      "agility": {
+        "experience": 15585112,
+        "level": 99,
+        "rank": 1808
+      },
+      "attack": {
+        "experience": 177313466,
+        "level": 99,
+        "rank": 150
+      },
+      "construction": {
+        "experience": 16511799,
+        "level": 99,
+        "rank": 313
+      },
+      "cooking": {
+        "experience": 200000000,
+        "level": 99,
+        "rank": 255
+      },
+      "crafting": {
+        "experience": 30019718,
+        "level": 99,
+        "rank": 430
+      },
+      "defence": {
+        "experience": 21122418,
+        "level": 99,
+        "rank": 13518
+      },
+      "farming": {
+        "experience": 68900329,
+        "level": 99,
+        "rank": 656
+      },
+      "firemaking": {
+        "experience": 30088535,
+        "level": 99,
+        "rank": 1921
+      },
+      "fishing": {
+        "experience": 22861094,
+        "level": 99,
+        "rank": 2702
+      },
+      "fletching": {
+        "experience": 30073339,
+        "level": 99,
+        "rank": 1127
+      },
+      "herblore": {
+        "experience": 30063274,
+        "level": 99,
+        "rank": 265
+      },
+      "hitpoints": {
+        "experience": 86966857,
+        "level": 99,
+        "rank": 1247
+      },
+      "hunter": {
+        "experience": 13709772,
+        "level": 99,
+        "rank": 9585
+      },
+      "magic": {
+        "experience": 21975963,
+        "level": 99,
+        "rank": 11903
+      },
+      "mining": {
+        "experience": 28154835,
+        "level": 99,
+        "rank": 786
+      },
+      "overall": {
+        "experience": 1004888190,
+        "level": 2277,
+        "rank": 482
+      },
+      "prayer": {
+        "experience": 23607177,
+        "level": 99,
+        "rank": 223
+      },
+      "ranged": {
+        "experience": 39330316,
+        "level": 99,
+        "rank": 13324
+      },
+      "runecraft": {
+        "experience": 20053883,
+        "level": 99,
+        "rank": 953
+      },
+      "slayer": {
+        "experience": 20293993,
+        "level": 99,
+        "rank": 6756
+      },
+      "smithing": {
+        "experience": 30010168,
+        "level": 99,
+        "rank": 829
+      },
+      "strength": {
+        "experience": 23860522,
+        "level": 99,
+        "rank": 23274
+      },
+      "thieving": {
+        "experience": 22091405,
+        "level": 99,
+        "rank": 2469
+      },
+      "woodcutting": {
+        "experience": 32294215,
+        "level": 99,
+        "rank": 2015
+      }
+    }
+  },
+  "statsNoRankedSkill": {
+    "bosses": {
+      "abyssalSire": {
+        "rank": 3957,
+        "score": 910
+      },
+      "alchemicalHydra": {
+        "rank": 29495,
+        "score": 136
+      },
+      "barrowsChests": {
+        "rank": 62120,
+        "score": 178
+      },
+      "bryophyta": {
+        "rank": 42086,
+        "score": 1
+      },
+      "callisto": {
+        "rank": 42086,
+        "score": 1
+      },
+      "cerberus": {
+        "rank": 42086,
+        "score": 1
+      },
+      "chambersOfXeric": {
+        "rank": 11149,
+        "score": 456
+      },
+      "chambersOfXericChallengeMode": {
+        "rank": -1,
+        "score": -1
+      },
+      "chaosElemental": {
+        "rank": 4218,
+        "score": 157
+      },
+      "chaosFanatic": {
+        "rank": 33567,
+        "score": 30
+      },
+      "commanderZilyana": {
+        "rank": 12540,
+        "score": 283
+      },
+      "corporealBeast": {
+        "rank": 47194,
+        "score": 10
+      },
+      "crazyArchaeologist": {
+        "rank": 72282,
+        "score": 6
+      },
+      "dagannothPrime": {
+        "rank": 5876,
+        "score": 1084
+      },
+      "dagannothRex": {
+        "rank": 7254,
+        "score": 1110
+      },
+      "dagannothSupreme": {
+        "rank": 6762,
+        "score": 1006
+      },
+      "derangedArchaeologist": {
+        "rank": -1,
+        "score": -1
+      },
+      "generalGraardor": {
+        "rank": 29833,
+        "score": 240
+      },
+      "giantMole": {
+        "rank": 4105,
+        "score": 1100
+      },
+      "grotesqueGuardians": {
+        "rank": 41134,
+        "score": 30
+      },
+      "hespori": {
+        "rank": 21976,
+        "score": 45
+      },
+      "kalphiteQueen": {
+        "rank": 3275,
+        "score": 660
+      },
+      "kingBlackDragon": {
+        "rank": 43920,
+        "score": 187
+      },
+      "kraken": {
+        "rank": 29327,
+        "score": 1663
+      },
+      "kreeArra": {
+        "rank": 10155,
+        "score": 271
+      },
+      "krilTsutsaroth": {
+        "rank": 21394,
+        "score": 89
+      },
+      "mimic": {
+        "rank": 21394,
+        "score": 89
+      },
+      "nightmare": {
+        "rank": -1,
+        "score": -1
+      },
+      "obor": {
+        "rank": -1,
+        "score": -1
+      },
+      "sarachnis": {
+        "rank": -1,
+        "score": -1
+      },
+      "scorpia": {
+        "rank": 9421,
+        "score": 103
+      },
+      "skotizo": {
+        "rank": 75113,
+        "score": 11
+      },
+      "theCorruptedGauntlet": {
+        "rank": -1,
+        "score": -1
+      },
+      "theGauntlet": {
+        "rank": -1,
+        "score": -1
+      },
+      "theatreOfBlood": {
+        "rank": 13681,
+        "score": 1
+      },
+      "thermonuclearSmokeDevil": {
+        "rank": 47124,
+        "score": 37
+      },
+      "tzKalZuk": {
+        "rank": 1356,
+        "score": 2
+      },
+      "tzTokJad": {
+        "rank": 9792,
+        "score": 17
+      },
+      "venenatis": {
+        "rank": 79082,
+        "score": 1
+      },
+      "vetion": {
+        "rank": 49716,
+        "score": 1
+      },
+      "vorkath": {
+        "rank": 9046,
+        "score": 1160
+      },
+      "wintertodt": {
+        "rank": 29515,
+        "score": 525
+      },
+      "zalcano": {
+        "rank": -1,
+        "score": -1
+      },
+      "zulrah": {
+        "rank": 14328,
+        "score": 1750
+      }
+    },
+    "bountyHunter": {
+      "hunter": {
+        "rank": -1,
+        "score": -1
+      },
+      "rogue": {
+        "rank": -1,
+        "score": -1
+      }
+    },
+    "clues": {
+      "all": {
+        "rank": 3794,
+        "score": 1347
+      },
+      "beginner": {
+        "rank": -1,
+        "score": -1
+      },
+      "easy": {
+        "rank": 2358,
+        "score": 500
+      },
+      "elite": {
+        "rank": 8956,
+        "score": 84
+      },
+      "hard": {
+        "rank": 16509,
+        "score": 300
+      },
+      "master": {
+        "rank": 5902,
+        "score": 63
+      },
+      "medium": {
+        "rank": 10413,
+        "score": 400
+      }
+    },
+    "lastManStanding": {
+      "rank": -1,
+      "score": -1
+    },
+    "leaguePoints": {
+      "rank": -1,
+      "score": -1
+    },
+    "skills": {
+      "overall": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "attack": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "defence": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "strength": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "hitpoints": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "ranged": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "prayer": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "magic": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "cooking": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "woodcutting": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "fletching": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "fishing": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "firemaking": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "crafting": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "smithing": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "mining": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "herblore": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "agility": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "thieving": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "slayer": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "farming": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "runecraft": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "hunter": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      },
+      "construction": {
+        "experience": -1,
+        "level": -1,
+        "rank": -1
+      }
+    }
+  }
+}

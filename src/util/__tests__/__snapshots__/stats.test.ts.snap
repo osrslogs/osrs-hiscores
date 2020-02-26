@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getRankedSkill returns a skill name when there is a ranked skill 1`] = `"construction"`;

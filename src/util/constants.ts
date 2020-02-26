@@ -1,0 +1,83 @@
+import { BountyHunterType, Mode, SkillName, BossName, ClueType, ActivityName } from '../types';
+
+export const BOUNTY_HUNTER: BountyHunterType[] = ['hunter', 'rogue'];
+
+export const CLUES: ClueType[] = ['all', 'beginner', 'easy', 'medium', 'hard', 'elite', 'master'];
+
+export const BOSSES: BossName[] = [
+  'abyssalSire',
+  'alchemicalHydra',
+  'barrowsChests',
+  'bryophyta',
+  'callisto',
+  'cerberus',
+  'chambersOfXeric',
+  'chambersOfXericChallengeMode',
+  'chaosElemental',
+  'chaosFanatic',
+  'commanderZilyana',
+  'corporealBeast',
+  'crazyArchaeologist',
+  'dagannothPrime',
+  'dagannothRex',
+  'dagannothSupreme',
+  'derangedArchaeologist',
+  'generalGraardor',
+  'giantMole',
+  'grotesqueGuardians',
+  'hespori',
+  'kalphiteQueen',
+  'kingBlackDragon',
+  'kraken',
+  'kreeArra',
+  'krilTsutsaroth',
+  'mimic',
+  'nightmare',
+  'obor',
+  'sarachnis',
+  'scorpia',
+  'skotizo',
+  'theGauntlet',
+  'theCorruptedGauntlet',
+  'theatreOfBlood',
+  'thermonuclearSmokeDevil',
+  'tzKalZuk',
+  'tzTokJad',
+  'venenatis',
+  'vetion',
+  'vorkath',
+  'wintertodt',
+  'zalcano',
+  'zulrah',
+];
+
+export const SKILLS: SkillName[] = [
+  'overall',
+  'attack',
+  'defence',
+  'strength',
+  'hitpoints',
+  'ranged',
+  'prayer',
+  'magic',
+  'cooking',
+  'woodcutting',
+  'fletching',
+  'fishing',
+  'firemaking',
+  'crafting',
+  'smithing',
+  'mining',
+  'herblore',
+  'agility',
+  'thieving',
+  'slayer',
+  'farming',
+  'runecraft',
+  'hunter',
+  'construction',
+];
+
+export const ACTIVITIES: ActivityName[] = ['leaguePoints', ...BOUNTY_HUNTER, ...CLUES, 'lastManStanding', ...BOSSES];
+
+export const MODES: Mode[] = ['normal', 'ironman', 'ultimate', 'hardcore', 'deadman', 'seasonal', 'tournament'];

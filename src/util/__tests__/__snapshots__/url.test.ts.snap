@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildActivityPageUrl returns expected url with default mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?category_type=1&table=16"`;
+
+exports[`buildActivityPageUrl returns expected url with default mode 2`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?category_type=1&table=16"`;
+
+exports[`buildActivityPageUrl returns expected url with specified mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/overall.ws?category_type=1&table=5"`;
+
+exports[`buildDisplayNameUrl returns expected url with default mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?table=23&user=zezima"`;
+
+exports[`buildDisplayNameUrl returns expected url with default skill 1`] = `"https://secure.runescape.com/m=hiscore_oldschool_ironman/overall.ws?table=0&user=zezima"`;
+
+exports[`buildDisplayNameUrl returns expected url with default skill and mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?table=0&user=zezima"`;
+
+exports[`buildSkillPageUrl returns expected url with default mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?table=9"`;
+
+exports[`buildSkillPageUrl returns expected url with specified mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/overall.ws?table=4"`;
+
+exports[`buildSkillPageUrl returns expected url with undefined mode 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/overall.ws?table=9"`;
+
+exports[`buildStatsUrl returns expected url when mode is specified 1`] = `"https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.ws?player=zezima"`;
+
+exports[`buildStatsUrl returns expected url without mode specified 1`] = `"https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=zezima"`;

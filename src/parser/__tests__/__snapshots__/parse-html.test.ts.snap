@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseActivityPage it parses \`isDead\` correctly for dead hardcore ironmen 1`] = `
+Array [
+  Object {
+    "dead": false,
+    "name": "Im Phone Btw",
+    "rank": 2,
+    "score": 279,
+  },
+  Object {
+    "dead": false,
+    "name": "Rear mirror",
+    "rank": 3,
+    "score": 275,
+  },
+  Object {
+    "dead": true,
+    "name": "BlameTheGame",
+    "rank": 4,
+    "score": 253,
+  },
+]
+`;
+
+exports[`parseActivityPage it returns PlayerActivityRow[] when given a valid normal page 1`] = `
+Array [
+  Object {
+    "name": "Nex-Zeus",
+    "rank": 8,
+    "score": 34,
+  },
+  Object {
+    "name": "Kaempen",
+    "rank": 9,
+    "score": 33,
+  },
+  Object {
+    "name": "Lads sesh",
+    "rank": 10,
+    "score": 29,
+  },
+]
+`;
+
+exports[`parseDisplayNamePage returns display name when html contains highlighted name 1`] = `"BobRoss"`;
+
+exports[`parseSkillPage it parses \`isDead\` correctly for dead hardcore ironmen 1`] = `
+Array [
+  Object {
+    "dead": false,
+    "experience": 1,
+    "level": 2,
+    "name": "5th hcim LUL",
+    "rank": 3,
+  },
+  Object {
+    "dead": true,
+    "experience": 1,
+    "level": 2,
+    "name": "Nechs",
+    "rank": 4,
+  },
+  Object {
+    "dead": false,
+    "experience": 1,
+    "level": 2,
+    "name": "Farmer McGee",
+    "rank": 5,
+  },
+]
+`;
+
+exports[`parseSkillPage it returns PlayerSkillRow[] when given a valid normal page 1`] = `
+Array [
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+]
+`;

@@ -1,0 +1,839 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getActivityPage it returns activity rows with default page and mode 1`] = `
+Array [
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+]
+`;
+
+exports[`getActivityPage returns activity rows on default page and specific mode 1`] = `
+Array [
+  Object {
+    "dead": false,
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "dead": false,
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "dead": false,
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+]
+`;
+
+exports[`getActivityPage returns activity rows on specific page and default mode 1`] = `
+Array [
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+  Object {
+    "name": "Sathon",
+    "rank": 1,
+    "score": 99,
+  },
+]
+`;
+
+exports[`getSkillPage it returns skillrows with default page and mode 1`] = `
+Array [
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+]
+`;
+
+exports[`getSkillPage returns skillrows on default page and specific mode 1`] = `
+Array [
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+]
+`;
+
+exports[`getSkillPage returns skillrows on specific page and default mode 1`] = `
+Array [
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+  Object {
+    "experience": 200,
+    "level": 99,
+    "name": "Sathon",
+    "rank": 1,
+  },
+]
+`;
+
+exports[`getStats returns formatted stats when called with default mode 1`] = `
+Object {
+  "bosses": Object {
+    "abyssalSire": Object {
+      "rank": 3957,
+      "score": 910,
+    },
+    "alchemicalHydra": Object {
+      "rank": 29495,
+      "score": 136,
+    },
+    "barrowsChests": Object {
+      "rank": 62120,
+      "score": 178,
+    },
+    "bryophyta": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "callisto": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "cerberus": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "chambersOfXeric": Object {
+      "rank": 11149,
+      "score": 456,
+    },
+    "chambersOfXericChallengeMode": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "chaosElemental": Object {
+      "rank": 4218,
+      "score": 157,
+    },
+    "chaosFanatic": Object {
+      "rank": 33567,
+      "score": 30,
+    },
+    "commanderZilyana": Object {
+      "rank": 12540,
+      "score": 283,
+    },
+    "corporealBeast": Object {
+      "rank": 47194,
+      "score": 10,
+    },
+    "crazyArchaeologist": Object {
+      "rank": 72282,
+      "score": 6,
+    },
+    "dagannothPrime": Object {
+      "rank": 5876,
+      "score": 1084,
+    },
+    "dagannothRex": Object {
+      "rank": 7254,
+      "score": 1110,
+    },
+    "dagannothSupreme": Object {
+      "rank": 6762,
+      "score": 1006,
+    },
+    "derangedArchaeologist": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "generalGraardor": Object {
+      "rank": 29833,
+      "score": 240,
+    },
+    "giantMole": Object {
+      "rank": 4105,
+      "score": 1100,
+    },
+    "grotesqueGuardians": Object {
+      "rank": 41134,
+      "score": 30,
+    },
+    "hespori": Object {
+      "rank": 21976,
+      "score": 45,
+    },
+    "kalphiteQueen": Object {
+      "rank": 3275,
+      "score": 660,
+    },
+    "kingBlackDragon": Object {
+      "rank": 43920,
+      "score": 187,
+    },
+    "kraken": Object {
+      "rank": 29327,
+      "score": 1663,
+    },
+    "kreeArra": Object {
+      "rank": 10155,
+      "score": 271,
+    },
+    "krilTsutsaroth": Object {
+      "rank": 21394,
+      "score": 89,
+    },
+    "mimic": Object {
+      "rank": 21394,
+      "score": 89,
+    },
+    "nightmare": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "obor": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "sarachnis": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "scorpia": Object {
+      "rank": 9421,
+      "score": 103,
+    },
+    "skotizo": Object {
+      "rank": 75113,
+      "score": 11,
+    },
+    "theCorruptedGauntlet": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "theGauntlet": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "theatreOfBlood": Object {
+      "rank": 13681,
+      "score": 1,
+    },
+    "thermonuclearSmokeDevil": Object {
+      "rank": 47124,
+      "score": 37,
+    },
+    "tzKalZuk": Object {
+      "rank": 1356,
+      "score": 2,
+    },
+    "tzTokJad": Object {
+      "rank": 9792,
+      "score": 17,
+    },
+    "venenatis": Object {
+      "rank": 79082,
+      "score": 1,
+    },
+    "vetion": Object {
+      "rank": 49716,
+      "score": 1,
+    },
+    "vorkath": Object {
+      "rank": 9046,
+      "score": 1160,
+    },
+    "wintertodt": Object {
+      "rank": 29515,
+      "score": 525,
+    },
+    "zalcano": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "zulrah": Object {
+      "rank": 14328,
+      "score": 1750,
+    },
+  },
+  "bountyHunter": Object {
+    "hunter": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "rogue": Object {
+      "rank": -1,
+      "score": -1,
+    },
+  },
+  "clues": Object {
+    "all": Object {
+      "rank": 3794,
+      "score": 1347,
+    },
+    "beginner": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "easy": Object {
+      "rank": 2358,
+      "score": 500,
+    },
+    "elite": Object {
+      "rank": 8956,
+      "score": 84,
+    },
+    "hard": Object {
+      "rank": 16509,
+      "score": 300,
+    },
+    "master": Object {
+      "rank": 5902,
+      "score": 63,
+    },
+    "medium": Object {
+      "rank": 10413,
+      "score": 400,
+    },
+  },
+  "lastManStanding": Object {
+    "rank": -1,
+    "score": -1,
+  },
+  "leaguePoints": Object {
+    "rank": -1,
+    "score": -1,
+  },
+  "skills": Object {
+    "agility": Object {
+      "experience": 15585112,
+      "level": 99,
+      "rank": 1808,
+    },
+    "attack": Object {
+      "experience": 177313466,
+      "level": 99,
+      "rank": 150,
+    },
+    "construction": Object {
+      "experience": 16511799,
+      "level": 99,
+      "rank": 313,
+    },
+    "cooking": Object {
+      "experience": 200000000,
+      "level": 99,
+      "rank": 255,
+    },
+    "crafting": Object {
+      "experience": 30019718,
+      "level": 99,
+      "rank": 430,
+    },
+    "defence": Object {
+      "experience": 21122418,
+      "level": 99,
+      "rank": 13518,
+    },
+    "farming": Object {
+      "experience": 68900329,
+      "level": 99,
+      "rank": 656,
+    },
+    "firemaking": Object {
+      "experience": 30088535,
+      "level": 99,
+      "rank": 1921,
+    },
+    "fishing": Object {
+      "experience": 22861094,
+      "level": 99,
+      "rank": 2702,
+    },
+    "fletching": Object {
+      "experience": 30073339,
+      "level": 99,
+      "rank": 1127,
+    },
+    "herblore": Object {
+      "experience": 30063274,
+      "level": 99,
+      "rank": 265,
+    },
+    "hitpoints": Object {
+      "experience": 86966857,
+      "level": 99,
+      "rank": 1247,
+    },
+    "hunter": Object {
+      "experience": 13709772,
+      "level": 99,
+      "rank": 9585,
+    },
+    "magic": Object {
+      "experience": 21975963,
+      "level": 99,
+      "rank": 11903,
+    },
+    "mining": Object {
+      "experience": 28154835,
+      "level": 99,
+      "rank": 786,
+    },
+    "overall": Object {
+      "experience": 1004888190,
+      "level": 2277,
+      "rank": 482,
+    },
+    "prayer": Object {
+      "experience": 23607177,
+      "level": 99,
+      "rank": 223,
+    },
+    "ranged": Object {
+      "experience": 39330316,
+      "level": 99,
+      "rank": 13324,
+    },
+    "runecraft": Object {
+      "experience": 20053883,
+      "level": 99,
+      "rank": 953,
+    },
+    "slayer": Object {
+      "experience": 20293993,
+      "level": 99,
+      "rank": 6756,
+    },
+    "smithing": Object {
+      "experience": 30010168,
+      "level": 99,
+      "rank": 829,
+    },
+    "strength": Object {
+      "experience": 23860522,
+      "level": 99,
+      "rank": 23274,
+    },
+    "thieving": Object {
+      "experience": 22091405,
+      "level": 99,
+      "rank": 2469,
+    },
+    "woodcutting": Object {
+      "experience": 32294215,
+      "level": 99,
+      "rank": 2015,
+    },
+  },
+}
+`;
+
+exports[`getStats returns formatted stats when called with specified mode 1`] = `
+Object {
+  "bosses": Object {
+    "abyssalSire": Object {
+      "rank": 3957,
+      "score": 910,
+    },
+    "alchemicalHydra": Object {
+      "rank": 29495,
+      "score": 136,
+    },
+    "barrowsChests": Object {
+      "rank": 62120,
+      "score": 178,
+    },
+    "bryophyta": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "callisto": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "cerberus": Object {
+      "rank": 42086,
+      "score": 1,
+    },
+    "chambersOfXeric": Object {
+      "rank": 11149,
+      "score": 456,
+    },
+    "chambersOfXericChallengeMode": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "chaosElemental": Object {
+      "rank": 4218,
+      "score": 157,
+    },
+    "chaosFanatic": Object {
+      "rank": 33567,
+      "score": 30,
+    },
+    "commanderZilyana": Object {
+      "rank": 12540,
+      "score": 283,
+    },
+    "corporealBeast": Object {
+      "rank": 47194,
+      "score": 10,
+    },
+    "crazyArchaeologist": Object {
+      "rank": 72282,
+      "score": 6,
+    },
+    "dagannothPrime": Object {
+      "rank": 5876,
+      "score": 1084,
+    },
+    "dagannothRex": Object {
+      "rank": 7254,
+      "score": 1110,
+    },
+    "dagannothSupreme": Object {
+      "rank": 6762,
+      "score": 1006,
+    },
+    "derangedArchaeologist": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "generalGraardor": Object {
+      "rank": 29833,
+      "score": 240,
+    },
+    "giantMole": Object {
+      "rank": 4105,
+      "score": 1100,
+    },
+    "grotesqueGuardians": Object {
+      "rank": 41134,
+      "score": 30,
+    },
+    "hespori": Object {
+      "rank": 21976,
+      "score": 45,
+    },
+    "kalphiteQueen": Object {
+      "rank": 3275,
+      "score": 660,
+    },
+    "kingBlackDragon": Object {
+      "rank": 43920,
+      "score": 187,
+    },
+    "kraken": Object {
+      "rank": 29327,
+      "score": 1663,
+    },
+    "kreeArra": Object {
+      "rank": 10155,
+      "score": 271,
+    },
+    "krilTsutsaroth": Object {
+      "rank": 21394,
+      "score": 89,
+    },
+    "mimic": Object {
+      "rank": 21394,
+      "score": 89,
+    },
+    "nightmare": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "obor": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "sarachnis": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "scorpia": Object {
+      "rank": 9421,
+      "score": 103,
+    },
+    "skotizo": Object {
+      "rank": 75113,
+      "score": 11,
+    },
+    "theCorruptedGauntlet": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "theGauntlet": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "theatreOfBlood": Object {
+      "rank": 13681,
+      "score": 1,
+    },
+    "thermonuclearSmokeDevil": Object {
+      "rank": 47124,
+      "score": 37,
+    },
+    "tzKalZuk": Object {
+      "rank": 1356,
+      "score": 2,
+    },
+    "tzTokJad": Object {
+      "rank": 9792,
+      "score": 17,
+    },
+    "venenatis": Object {
+      "rank": 79082,
+      "score": 1,
+    },
+    "vetion": Object {
+      "rank": 49716,
+      "score": 1,
+    },
+    "vorkath": Object {
+      "rank": 9046,
+      "score": 1160,
+    },
+    "wintertodt": Object {
+      "rank": 29515,
+      "score": 525,
+    },
+    "zalcano": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "zulrah": Object {
+      "rank": 14328,
+      "score": 1750,
+    },
+  },
+  "bountyHunter": Object {
+    "hunter": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "rogue": Object {
+      "rank": -1,
+      "score": -1,
+    },
+  },
+  "clues": Object {
+    "all": Object {
+      "rank": 3794,
+      "score": 1347,
+    },
+    "beginner": Object {
+      "rank": -1,
+      "score": -1,
+    },
+    "easy": Object {
+      "rank": 2358,
+      "score": 500,
+    },
+    "elite": Object {
+      "rank": 8956,
+      "score": 84,
+    },
+    "hard": Object {
+      "rank": 16509,
+      "score": 300,
+    },
+    "master": Object {
+      "rank": 5902,
+      "score": 63,
+    },
+    "medium": Object {
+      "rank": 10413,
+      "score": 400,
+    },
+  },
+  "lastManStanding": Object {
+    "rank": -1,
+    "score": -1,
+  },
+  "leaguePoints": Object {
+    "rank": -1,
+    "score": -1,
+  },
+  "skills": Object {
+    "agility": Object {
+      "experience": 15585112,
+      "level": 99,
+      "rank": 1808,
+    },
+    "attack": Object {
+      "experience": 177313466,
+      "level": 99,
+      "rank": 150,
+    },
+    "construction": Object {
+      "experience": 16511799,
+      "level": 99,
+      "rank": 313,
+    },
+    "cooking": Object {
+      "experience": 200000000,
+      "level": 99,
+      "rank": 255,
+    },
+    "crafting": Object {
+      "experience": 30019718,
+      "level": 99,
+      "rank": 430,
+    },
+    "defence": Object {
+      "experience": 21122418,
+      "level": 99,
+      "rank": 13518,
+    },
+    "farming": Object {
+      "experience": 68900329,
+      "level": 99,
+      "rank": 656,
+    },
+    "firemaking": Object {
+      "experience": 30088535,
+      "level": 99,
+      "rank": 1921,
+    },
+    "fishing": Object {
+      "experience": 22861094,
+      "level": 99,
+      "rank": 2702,
+    },
+    "fletching": Object {
+      "experience": 30073339,
+      "level": 99,
+      "rank": 1127,
+    },
+    "herblore": Object {
+      "experience": 30063274,
+      "level": 99,
+      "rank": 265,
+    },
+    "hitpoints": Object {
+      "experience": 86966857,
+      "level": 99,
+      "rank": 1247,
+    },
+    "hunter": Object {
+      "experience": 13709772,
+      "level": 99,
+      "rank": 9585,
+    },
+    "magic": Object {
+      "experience": 21975963,
+      "level": 99,
+      "rank": 11903,
+    },
+    "mining": Object {
+      "experience": 28154835,
+      "level": 99,
+      "rank": 786,
+    },
+    "overall": Object {
+      "experience": 1004888190,
+      "level": 2277,
+      "rank": 482,
+    },
+    "prayer": Object {
+      "experience": 23607177,
+      "level": 99,
+      "rank": 223,
+    },
+    "ranged": Object {
+      "experience": 39330316,
+      "level": 99,
+      "rank": 13324,
+    },
+    "runecraft": Object {
+      "experience": 20053883,
+      "level": 99,
+      "rank": 953,
+    },
+    "slayer": Object {
+      "experience": 20293993,
+      "level": 99,
+      "rank": 6756,
+    },
+    "smithing": Object {
+      "experience": 30010168,
+      "level": 99,
+      "rank": 829,
+    },
+    "strength": Object {
+      "experience": 23860522,
+      "level": 99,
+      "rank": 23274,
+    },
+    "thieving": Object {
+      "experience": 22091405,
+      "level": 99,
+      "rank": 2469,
+    },
+    "woodcutting": Object {
+      "experience": 32294215,
+      "level": 99,
+      "rank": 2015,
+    },
+  },
+}
+`;
