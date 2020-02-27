@@ -1,9 +1,9 @@
 # OSRS Hiscores
 
-[![npm version][version-badge]][version]
-[![MIT license][license-badge]][license]
 [![build status][build-badge]][build]
 [![code coverage][coverage-badge]][coverage]
+[![MIT license][license-badge]][license]
+[![npm version][version-badge]][version]
 [![semantic-release][release-badge]][release]
 
 A Promise based Old School RuneScape hiscores API wrapper.
@@ -84,13 +84,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- badges -->
 
-[version-badge]: https://img.shields.io/npm/v/osrslogs-hiscores
-[version]: https://www.npmjs.com/package/osrs-hiscores
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: LICENSE
 [build-badge]: https://img.shields.io/github/workflow/status/osrslogs/osrs-hiscores/CI/master
 [build]: https://github.com/osrslogs/osrs-hiscores/actions?query=branch%3Amaster
 [coverage-badge]: https://img.shields.io/codecov/c/github/osrslogs/osrs-hiscores/master
 [coverage]: https://codecov.io/github/osrslogs/osrs-hiscores/branch/master
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[license]: LICENSE
+[version-badge]: https://img.shields.io/npm/v/osrs-hiscores
+[version]: https://www.npmjs.com/package/osrs-hiscores
 [release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [release]: https://github.com/semantic-release/semantic-release
