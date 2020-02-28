@@ -71,12 +71,12 @@ Performs a hiscore lookup of the player name.
 
 Note: This method can not be used from a browser due to `Cross-Origin Resource Sharing` being disabled on the Old School RuneScape hiscores API.
 
-| Parameter | Required | Note                                                    |
-| --------- | -------- | ------------------------------------------------------- |
-| Player    | Yes      | The player name to lookup                               |
-| Mode      | No       | The [mode](docs/TYPES.md##Modes) (defaults to `normal`) |
+| Parameter | Required | Note                                                   |
+| --------- | -------- | ------------------------------------------------------ |
+| Player    | Yes      | The player name to lookup                              |
+| Mode      | No       | The [mode](docs/TYPES.md#Modes) (defaults to `normal`) |
 
-**Usage**
+#### Usage
 
 ```ts
 import Hiscores from 'osrs-hiscores';
@@ -89,7 +89,7 @@ hiscores
   .catch(err => console.error(err));
 ```
 
-**Response**
+#### Response
 
 ```js
 {
@@ -121,13 +121,13 @@ hiscores
 
 Performs a skill page lookup.
 
-| Parameter | Required | Note                                                    |
-| --------- | -------- | ------------------------------------------------------- |
-| Skill     | Yes      | The [skill](docs/TYPES.md##Skills) to lookup            |
-| Mode      | No       | The [mode](docs/TYPES.md##Modes) (defaults to `normal`) |
-| Page      | No       | The page number to request (defaults to `0`)            |
+| Parameter | Required | Note                                                   |
+| --------- | -------- | ------------------------------------------------------ |
+| Skill     | Yes      | The [skill](docs/TYPES.md#Skills) to lookup            |
+| Mode      | No       | The [mode](docs/TYPES.md#Modes) (defaults to `normal`) |
+| Page      | No       | The page number to request (defaults to `0`)           |
 
-**Usage**
+#### Usage
 
 ```ts
 import Hiscores from 'osrs-hiscores';
@@ -140,7 +140,7 @@ hiscores
   .catch(err => console.error(err));
 ```
 
-**Response**
+#### Response
 
 A list representing the page table of the requested skill.
 
@@ -158,13 +158,13 @@ Note: The `dead` property is only included if `mode` is `hardcore`.
 
 Performs an activity page lookup.
 
-| Parameter | Required | Note                                                    |
-| --------- | -------- | ------------------------------------------------------- |
-| Activity  | Yes      | The [activity](docs/TYPES.md##Activities) to lookup     |
-| Mode      | No       | The [mode](docs/TYPES.md##Modes) (defaults to `normal`) |
-| Page      | No       | The page number to request (defaults to `0`)            |
+| Parameter | Required | Note                                                   |
+| --------- | -------- | ------------------------------------------------------ |
+| Activity  | Yes      | The [activity](docs/TYPES.md#Activities) to lookup     |
+| Mode      | No       | The [mode](docs/TYPES.md#Modes) (defaults to `normal`) |
+| Page      | No       | The page number to request (defaults to `0`)           |
 
-**Usage**
+#### Usage
 
 ```ts
 import Hiscores from 'osrs-hiscores';
@@ -177,7 +177,7 @@ hiscores
   .catch(err => console.error(err));
 ```
 
-**Response**
+#### Response
 
 A list representing the page table of the requested skill.
 
@@ -195,12 +195,12 @@ Note: The `dead` property is only included if `mode` is `hardcore`.
 
 Performs a lookup to find the formatted display name of the player.
 
-| Parameter | Required | Note                                                    |
-| --------- | -------- | ------------------------------------------------------- |
-| Player    | Yes      | The player name to lookup                               |
-| Mode      | No       | The [mode](docs/TYPES.md##Modes) (defaults to `normal`) |
+| Parameter | Required | Note                                                   |
+| --------- | -------- | ------------------------------------------------------ |
+| Player    | Yes      | The player name to lookup                              |
+| Mode      | No       | The [mode](docs/TYPES.md#Modes) (defaults to `normal`) |
 
-**Usage**
+#### Usage
 
 ```ts
 import Hiscores from 'osrs-hiscores';
@@ -213,7 +213,7 @@ hiscores
   .catch(err => console.error(err));
 ```
 
-**Response**
+#### Response
 
 ```js
 {

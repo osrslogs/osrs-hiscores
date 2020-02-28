@@ -3,12 +3,12 @@
 We are open to, and grateful for, any contrubtions made by the community. As a contributor, here are the guidelines we
 would like you to follow:
 
-- [Code of Conduct](##code-of-conduct)
-- [Got a question or problem?](##got-a-question-or-issue)
-- [Issues and bugs](##found-a-bug)
-- [Coding rules](##coding-rules)
-- [Working with the code](##working-with-the-code)
-- [Submission guidelines](##submission-guidelines)
+- [Code of Conduct](#code-of-conduct)
+- [Got a question or problem?](#got-a-question-or-issue)
+- [Issues and bugs](#found-a-bug)
+- [Coding rules](#coding-rules)
+- [Working with the code](#working-with-the-code)
+- [Submission guidelines](#submission-guidelines)
 
 ## Code of Conduct
 
@@ -21,8 +21,8 @@ If you have questions about how to contribute to the project, please join our [D
 
 ## Found a bug?
 
-If you find a bug in the soure code, you can help us by [submitting an issue](###submitting-an-issue) to our
-[GitHub repository](https://github.com/osrslogs/osrs-hiscores). Even better, you can [submit a pull request](###submitting-a-pull-request) with a fix.
+If you find a bug in the soure code, you can help us by [submitting an issue](#submitting-an-issue) to our
+[GitHub repository](https://github.com/osrslogs/osrs-hiscores). Even better, you can [submit a pull request](#submitting-a-pull-request) with a fix.
 
 ## Coding rules
 
@@ -54,7 +54,7 @@ Our pre-commit hooks verify that the linter pass when committing.
 
 ### Setup the workspace
 
-1. [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the project.
+1. [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the repository.
 2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) your fork.
 
 ```
@@ -106,7 +106,7 @@ You can file new issues by selecting from our [new issue templates](https://gith
 
 ### Submitting a pull request
 
-1. [Setup the workspace](###setup-the-workspace)
+1. [Setup the workspace](#setup-the-workspace)
 2. If you cloned a while ago, get the latest changes from upstream and update dependencies:
 
 ```
@@ -122,8 +122,8 @@ $ npm install
 $ git checkout -b <topic-branch-name>
 ```
 
-4. Make your changes, including appropriate test cases, following our [coding rules](##coding-rules).
-5. Commit your changes, following our [commit message convention](###commit-message-convention).
+4. Make your changes, including appropriate test cases, following our [coding rules](#coding-rules).
+5. Commit your changes, following our [commit message convention](#commit-message-convention).
 
 ```
 $ git commit -a
