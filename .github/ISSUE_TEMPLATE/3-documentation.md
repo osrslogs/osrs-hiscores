@@ -6,12 +6,11 @@ labels: documentation
 assignees: ''
 ---
 
-**Section/Content To Improve**
-
+**Section/Content to improve**
 Quote or link to section
 
-**Suggested Improvement**
-
+**Suggested improvement**
 Identify what is confusing or incorrect and what could make it better
 
-**Relevant File(s)**: [e.g. README.md]
+**Relevant file(s)**
+[e.g. README.md]
