@@ -12,7 +12,7 @@ would like you to follow:
 
 ## Code of Conduct
 
-Help us keep OSRS Logs open and inclusive. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+Help us keep **OSRS Hiscores** open and inclusive. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Got a question or problem?
 
@@ -133,7 +133,7 @@ Note: the optional commit `-a` command line option will automatically "add" and 
 
 6. Push your topic branch to GitHub:
 
-```bash
+```
 $ git push origin <topic-branch-name>
 ```
 
