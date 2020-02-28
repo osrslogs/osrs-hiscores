@@ -2,7 +2,7 @@
   "name": "osrs-hiscores",
   "version": "1.0.1",
   "license": "MIT",
-  "description": "Old School RuneScape hiscores wrapper",
+  "description": "A Promise based Old School RuneScape hiscores API",
   "homepage": "https://osrslogs.com",
   "bugs": {
     "url": "https://github.com/osrslogs/osrs-hiscores/issues"
@@ -20,8 +20,7 @@
     "runescape",
     "osrs",
     "hiscores",
-    "api",
-    "json"
+    "api"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
