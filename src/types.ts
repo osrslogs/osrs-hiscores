@@ -155,3 +155,7 @@ export interface Stats {
   lastManStanding: Activity;
   bosses: Bosses;
 }
+
+export interface DisplayName {
+  format: string;
+}

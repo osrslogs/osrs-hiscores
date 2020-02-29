@@ -45,7 +45,7 @@ We support _optional_ custom configuration for the HTTP requests being performed
 ```ts
 const config = {
   // `userAgent` specifies which user agent to send in the header of the request
-  userAgent: 'osrslogs-hiscores',
+  userAgent: 'osrs-hiscores',
 
   // `timeout` specifies the number of milliseconds before the request times out.
   // If the request takes longer than `timeout`, the request is aborted.
@@ -217,7 +217,7 @@ hiscores
 
 ```js
 {
-  displayName: 'Zezima';
+  format: 'Zezima';
 }
 ```
 

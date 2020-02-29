@@ -1,4 +1,4 @@
-import { Config, Stats, Mode, SkillName, PlayerSkillRow, PlayerActivityRow, ActivityName } from './types';
+import { Config, Stats, Mode, SkillName, PlayerSkillRow, PlayerActivityRow, ActivityName, DisplayName } from './types';
 import request from './request';
 import parseCsv from './parser/parse-csv';
 import { buildStatsUrl, buildSkillPageWithDisplayNameUrl, buildSkillPageUrl, buildActivityPageUrl } from './util/url';
@@ -9,7 +9,7 @@ import { InvalidPlayerError } from './util/error';
 
 class Hiscores {
   readonly config: Config = {
-    userAgent: 'osrslogs-hiscores',
+    userAgent: 'osrs-hiscores',
   };
 
   constructor(config?: Config) {
@@ -47,7 +47,7 @@ class Hiscores {
    * @param {string} player The player name to lookup
    * @param {Mode} [mode] The game mode to lookup. Defaults to `normal`
    *
-   * @returns {string} The formatted display name if found, else unformatted
+   * @returns {DisplayName} The formatted display name if found, else unformatted
    *
    * @throws {InvalidPlayerError} If player name is invalid
    * @throws {ServiceUnavailableError} If hiscores are unavailable
@@ -55,17 +55,18 @@ class Hiscores {
    * @throws {HttpError} If hiscores request failed unexpectedly
    * @throws {InvalidHtmlError} If the html had unexpected structure
    */
-  async getDisplayName(player: string, mode?: Mode): Promise<string> {
+  async getDisplayName(player: string, mode?: Mode): Promise<DisplayName> {
     // Hiscores tables only display the first 2m players in a stat
     // Find a stat the player is ranked in to use as lookup table
+    let displayName = player;
     const stats: Stats = await this.getStats(player, mode);
     const rankedSkill: string | undefined = getRankedStat(stats.skills);
     if (rankedSkill) {
       const url = buildSkillPageWithDisplayNameUrl(player, rankedSkill as SkillName, mode);
       const html = await request(url, this.config);
-      return parseDisplayNamePage(html);
+      displayName = parseDisplayNamePage(html);
     }
-    return player; // unable to find display name
+    return { format: displayName };
   }
 
   /**

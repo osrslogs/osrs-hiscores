@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { mocked } from 'ts-jest/utils';
 import Hiscores from '../hiscores';
-import { Stats, PlayerSkillRow, Mode, PlayerActivityRow } from '../types';
+import { Stats, PlayerSkillRow, Mode, PlayerActivityRow, DisplayName } from '../types';
 import { buildStatsUrl, buildSkillPageUrl, buildActivityPageUrl } from '../util/url';
 import { HttpError, InvalidCsvError, InvalidPlayerError, InvalidHtmlError } from '../util/error';
 import csvConfig from '../util/test-util/csv-mock.json';
@@ -13,7 +13,7 @@ const mockAxios = mocked(axios, true);
 const player = 'zezima';
 
 describe('constructor', () => {
-  const defaultUserAgent = 'osrslogs-hiscores';
+  const defaultUserAgent = 'osrs-hiscores';
 
   it('creates an object with UA config', () => {
     const expected = {
@@ -135,9 +135,9 @@ describe('getDisplayName', () => {
     const spy = jest.spyOn(hiscores, 'getStats').mockResolvedValueOnce(statsConfig.statsRanked);
     mockAxios.get.mockResolvedValueOnce({ data: htmlConfig.displayNamePage.valid });
 
-    const displayName: string = await hiscores.getDisplayName('bobross');
+    const displayName: DisplayName = await hiscores.getDisplayName('bobross');
 
-    expect(displayName).toBe('BobRoss');
+    expect(displayName.format).toBe('BobRoss');
     spy.mockRestore();
   });
 
@@ -145,7 +145,7 @@ describe('getDisplayName', () => {
     const spy = jest.spyOn(hiscores, 'getStats').mockResolvedValueOnce(statsConfig.statsRanked);
     mockAxios.get.mockResolvedValueOnce({ data: htmlConfig.displayNamePage.invalid });
 
-    const displayName: Promise<string> = hiscores.getDisplayName('bobross');
+    const displayName: Promise<DisplayName> = hiscores.getDisplayName('bobross');
 
     await expect(displayName).rejects.toThrow(InvalidHtmlError);
     spy.mockRestore();
@@ -154,9 +154,9 @@ describe('getDisplayName', () => {
   it('returns unformatted name if there are no ranked skills', async () => {
     const spy = jest.spyOn(hiscores, 'getStats').mockResolvedValueOnce(statsConfig.statsNoRankedSkill);
 
-    const displayName: string = await hiscores.getDisplayName('bobross');
+    const displayName: DisplayName = await hiscores.getDisplayName('bobross');
 
-    expect(displayName).toBe('bobross');
+    expect(displayName.format).toBe('bobross');
     spy.mockRestore();
   });
 });
