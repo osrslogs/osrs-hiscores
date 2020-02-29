@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.2...v1.0.3) (2020-02-29)
+
+
+### Bug Fixes
+
+* make display name return type match documentation ([d54f333](https://github.com/osrslogs/osrs-hiscores/commit/d54f333edd47ac74067134ff0827b8a1bff01629))
+
 ## [1.0.2](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.1...v1.0.2) (2020-02-28)
 
 
