@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.4...v1.1.0) (2020-03-11)
+
+
+### Features
+
+* add ability to find player game mode ([#10](https://github.com/osrslogs/osrs-hiscores/issues/10)) ([6502bc0](https://github.com/osrslogs/osrs-hiscores/commit/6502bc03f01771f8f484cc2817e43a51bfec80bc))
+
 ## [1.0.4](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.3...v1.0.4) (2020-03-11)
 
 
