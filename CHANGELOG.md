@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.3...v1.0.4) (2020-03-11)
+
+
+### Bug Fixes
+
+* make axios timeout throw hiscores unavailable error ([483bcc6](https://github.com/osrslogs/osrs-hiscores/commit/483bcc6f9f26310f18f758dd5c62553c4238a917))
+
 ## [1.0.3](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.2...v1.0.3) (2020-02-29)
 
 
