@@ -53,7 +53,7 @@ export class HttpError extends Error {
 
 export class NotFoundError extends HttpError {
   constructor(msg: string) {
-    super(msg, 403);
+    super(msg, 404);
   }
 }
 
