@@ -159,3 +159,7 @@ export interface Stats {
 export interface DisplayName {
   format: string;
 }
+
+export interface PlayerMode {
+  mode: Mode;
+}

@@ -1,4 +1,14 @@
-import { Config, Stats, Mode, SkillName, PlayerSkillRow, PlayerActivityRow, ActivityName, DisplayName } from './types';
+import {
+  Config,
+  Stats,
+  Mode,
+  SkillName,
+  PlayerSkillRow,
+  PlayerActivityRow,
+  ActivityName,
+  DisplayName,
+  PlayerMode,
+} from './types';
 import request from './request';
 import parseCsv from './parser/parse-csv';
 import { buildStatsUrl, buildSkillPageWithDisplayNameUrl, buildSkillPageUrl, buildActivityPageUrl } from './util/url';
@@ -115,6 +125,73 @@ class Hiscores {
 
     const html = await request(url, this.config);
     return parseActivityPage(html, mode === 'hardcore');
+  }
+
+  /**
+   * Get the mode of an account.
+   *
+   * To determine the mode we lookup the players stats for all possible modes. Checks are then
+   * perfomed based on the stats to see the state of the player.
+   *
+   * Normal is the base-case. All snowflake modes will have these stats (due to the hiscores being unreliable
+   * lately this may not always be the case. Using `>=` instead of `===` to solve the issue).
+   *
+   * Ironmen are then separed into categories:
+   *   - Ironman (same stats as normal, else de-ironed)
+   *   - Hardcore (same stats as ironman, else dead)
+   *   - Ultimate (same stats as ironman, else de-ulted)
+   *
+   * @param {string} Player The player name
+   *
+   * @returns {PlayerMode} The player mode
+   *
+   * @throws {InvalidPlayerError} If player name is invalid
+   * @throws {ServiceUnavailableError} If hiscores are unavailable
+   * @throws {NotFoundError} If hiscores did not find player
+   * @throws {HttpError} If hiscores request failed unexpectedly
+   * @throws {InvalidCsvError} If the csv had unexpected structure
+   */
+  async getMode(player: string): Promise<PlayerMode> {
+    const normal: Stats = await this.getStats(player);
+
+    const [ironman, hardcore, ultimate]: (Stats | false)[] = await Promise.all([
+      this.hasStats(player, 'ironman'),
+      this.hasStats(player, 'hardcore'),
+      this.hasStats(player, 'ultimate'),
+    ]);
+
+    // NOTE: checking for 'overall' only might not be sufficient in case of
+    // players that are not ranked 'overall', but in other skills
+    if (ironman && ironman.skills.overall.experience >= normal.skills.overall.experience) {
+      if (hardcore && hardcore.skills.overall.experience >= ironman.skills.overall.experience) {
+        return { mode: 'hardcore' };
+      }
+
+      if (ultimate && ultimate.skills.overall.experience >= ironman.skills.overall.experience) {
+        return { mode: 'ultimate' };
+      }
+
+      return { mode: 'ironman' };
+    }
+
+    return { mode: 'normal' };
+  }
+
+  private async hasStats(player: string, mode: Mode): Promise<Stats | false> {
+    try {
+      const stats: Stats = await this.getStats(player, mode);
+      return stats;
+    } catch (err) {
+      // We are expecting 404's when stats are not found. In which case
+      // return false instead of stats.
+      // use type of instead?
+      if (err.status === 404) {
+        return false;
+      }
+      // Unexpected errors and hiscores being available should still
+      // throw as then we want the entire lookup process to be terminated
+      throw err;
+    }
   }
 }
 

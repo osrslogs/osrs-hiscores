@@ -30,14 +30,14 @@ describe('HttpError', () => {
 });
 
 describe('NotFoundError', () => {
-  it('has default status 403', () => {
+  it('has default status 404', () => {
     const result = new NotFoundError('');
-    expect(result.status).toEqual(403);
+    expect(result.status).toEqual(404);
   });
 });
 
 describe('ServiceUnavailableError', () => {
-  it('has default status 403', () => {
+  it('has default status 503', () => {
     const result = new ServiceUnavailableError('');
     expect(result.status).toEqual(503);
   });

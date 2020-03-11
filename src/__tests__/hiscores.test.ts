@@ -1,9 +1,16 @@
+/* eslint-disable prefer-promise-reject-errors */
 import axios from 'axios';
 import { mocked } from 'ts-jest/utils';
 import Hiscores from '../hiscores';
-import { Stats, PlayerSkillRow, Mode, PlayerActivityRow, DisplayName } from '../types';
+import { Stats, PlayerSkillRow, Mode, PlayerActivityRow, DisplayName, PlayerMode } from '../types';
 import { buildStatsUrl, buildSkillPageUrl, buildActivityPageUrl } from '../util/url';
-import { HttpError, InvalidCsvError, InvalidPlayerError, InvalidHtmlError } from '../util/error';
+import {
+  HttpError,
+  InvalidCsvError,
+  InvalidPlayerError,
+  InvalidHtmlError,
+  ServiceUnavailableError,
+} from '../util/error';
 import csvConfig from '../util/test-util/csv-mock.json';
 import statsConfig from '../util/test-util/stats-mock.json';
 import htmlConfig from '../util/test-util/html-mock.json';
@@ -232,5 +239,133 @@ describe('getActivityPage', () => {
 
     expect(mockAxios.get).toHaveBeenLastCalledWith(url, expect.any(Object));
     expect(activityRows).toMatchSnapshot();
+  });
+});
+
+describe('getMode', () => {
+  const hiscores = new Hiscores();
+
+  it('returns `normal` for normal accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (
+        url === buildStatsUrl(player, 'ironman') ||
+        url === buildStatsUrl(player, 'hardcore') ||
+        url === buildStatsUrl(player, 'ultimate')
+      ) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('returns `ironman` for ironman accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (url === buildStatsUrl(player, 'hardcore') || url === buildStatsUrl(player, 'ultimate')) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('returns `ultimate` for ultimate accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (url === buildStatsUrl(player, 'hardcore')) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('returns `hardcore` for hardcore accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (url === buildStatsUrl(player, 'ultimate')) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('returns `ironman` for dead hardcore accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (url === buildStatsUrl(player, 'ultimate')) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      if (url === buildStatsUrl(player, 'hardcore')) {
+        return Promise.resolve({ data: csvConfig.validLessOverallXp });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('returns `normal` for deironed accounts', async () => {
+    mockAxios.get.mockImplementation(url => {
+      if (url === buildStatsUrl(player, 'ultimate') || url === buildStatsUrl(player, 'hardcore')) {
+        return Promise.reject({
+          response: {
+            status: 404,
+          },
+        });
+      }
+      if (url === buildStatsUrl(player, 'ironman')) {
+        return Promise.resolve({ data: csvConfig.validLessOverallXp });
+      }
+      return Promise.resolve({ data: csvConfig.valid });
+    });
+
+    const mode: PlayerMode = await hiscores.getMode(player);
+
+    expect(mode).toMatchSnapshot();
+  });
+
+  it('throws error when hiscores are unavailable', async () => {
+    mockAxios.get.mockRejectedValueOnce({
+      response: {
+        status: 303,
+      },
+    });
+
+    const mode: Promise<PlayerMode> = hiscores.getMode(player);
+
+    await expect(mode).rejects.toThrow(ServiceUnavailableError);
   });
 });
