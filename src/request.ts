@@ -39,10 +39,11 @@ const request = async (url: string, config: Config): Promise<string> => {
     const res = await axios.get(url, axiosConfig);
     return res.data;
   } catch (err) {
-    if (err.response.status === 303) {
+    // Handle timeout requests as if hiscores are unavailable
+    if (err.code === 'ECONNABORTED' || err.response?.status === 303) {
       throw new ServiceUnavailableError('Hiscores are unavailable');
     }
-    if (err.response.status === 404) {
+    if (err.response?.status === 404) {
       throw new NotFoundError('Hiscores did not find player');
     }
     // should never occur
