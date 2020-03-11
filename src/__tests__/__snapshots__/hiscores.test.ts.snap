@@ -63,6 +63,42 @@ Array [
 ]
 `;
 
+exports[`getMode returns \`hardcore\` for hardcore accounts 1`] = `
+Object {
+  "mode": "hardcore",
+}
+`;
+
+exports[`getMode returns \`ironman\` for dead hardcore accounts 1`] = `
+Object {
+  "mode": "ironman",
+}
+`;
+
+exports[`getMode returns \`ironman\` for ironman accounts 1`] = `
+Object {
+  "mode": "ironman",
+}
+`;
+
+exports[`getMode returns \`normal\` for deironed accounts 1`] = `
+Object {
+  "mode": "normal",
+}
+`;
+
+exports[`getMode returns \`normal\` for normal accounts 1`] = `
+Object {
+  "mode": "normal",
+}
+`;
+
+exports[`getMode returns \`ultimate\` for ultimate accounts 1`] = `
+Object {
+  "mode": "ultimate",
+}
+`;
+
 exports[`getSkillPage it returns skillrows with default page and mode 1`] = `
 Array [
   Object {

@@ -1,4 +1,14 @@
-import { Config, Stats, Mode, SkillName, PlayerSkillRow, PlayerActivityRow, ActivityName, DisplayName } from './types';
+import {
+  Config,
+  Stats,
+  Mode,
+  SkillName,
+  PlayerSkillRow,
+  PlayerActivityRow,
+  ActivityName,
+  DisplayName,
+  PlayerMode,
+} from './types';
 import request from './request';
 import parseCsv from './parser/parse-csv';
 import { buildStatsUrl, buildSkillPageWithDisplayNameUrl, buildSkillPageUrl, buildActivityPageUrl } from './util/url';
@@ -133,7 +143,7 @@ class Hiscores {
    *
    * @param {string} Player The player name
    *
-   * @returns {Mode} The player mode
+   * @returns {PlayerMode} The player mode
    *
    * @throws {InvalidPlayerError} If player name is invalid
    * @throws {ServiceUnavailableError} If hiscores are unavailable
@@ -141,7 +151,7 @@ class Hiscores {
    * @throws {HttpError} If hiscores request failed unexpectedly
    * @throws {InvalidCsvError} If the csv had unexpected structure
    */
-  async getMode(player: string): Promise<Mode> {
+  async getMode(player: string): Promise<PlayerMode> {
     const normal: Stats = await this.getStats(player);
 
     const [ironman, hardcore, ultimate]: (Stats | false)[] = await Promise.all([
@@ -154,17 +164,17 @@ class Hiscores {
     // players that are not ranked 'overall', but in other skills
     if (ironman && ironman.skills.overall.experience >= normal.skills.overall.experience) {
       if (hardcore && hardcore.skills.overall.experience >= ironman.skills.overall.experience) {
-        return 'hardcore';
+        return { mode: 'hardcore' };
       }
 
       if (ultimate && ultimate.skills.overall.experience >= ironman.skills.overall.experience) {
-        return 'ultimate';
+        return { mode: 'ultimate' };
       }
 
-      return 'ironman';
+      return { mode: 'ironman' };
     }
 
-    return 'normal';
+    return { mode: 'normal' };
   }
 
   private async hasStats(player: string, mode: Mode): Promise<Stats | false> {

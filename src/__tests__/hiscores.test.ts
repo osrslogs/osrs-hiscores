@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { mocked } from 'ts-jest/utils';
 import Hiscores from '../hiscores';
-import { Stats, PlayerSkillRow, Mode, PlayerActivityRow, DisplayName } from '../types';
+import { Stats, PlayerSkillRow, Mode, PlayerActivityRow, DisplayName, PlayerMode } from '../types';
 import { buildStatsUrl, buildSkillPageUrl, buildActivityPageUrl } from '../util/url';
 import {
   HttpError,
@@ -261,9 +261,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('normal');
+    expect(mode).toMatchSnapshot();
   });
 
   it('returns `ironman` for ironman accounts', async () => {
@@ -278,9 +278,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('ironman');
+    expect(mode).toMatchSnapshot();
   });
 
   it('returns `ultimate` for ultimate accounts', async () => {
@@ -295,9 +295,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('ultimate');
+    expect(mode).toMatchSnapshot();
   });
 
   it('returns `hardcore` for hardcore accounts', async () => {
@@ -312,9 +312,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('hardcore');
+    expect(mode).toMatchSnapshot();
   });
 
   it('returns `ironman` for dead hardcore accounts', async () => {
@@ -332,9 +332,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('ironman');
+    expect(mode).toMatchSnapshot();
   });
 
   it('returns `normal` for deironed accounts', async () => {
@@ -352,9 +352,9 @@ describe('getMode', () => {
       return Promise.resolve({ data: csvConfig.valid });
     });
 
-    const mode: string = await hiscores.getMode(player);
+    const mode: PlayerMode = await hiscores.getMode(player);
 
-    expect(mode).toBe('normal');
+    expect(mode).toMatchSnapshot();
   });
 
   it('throws error when hiscores are unavailable', async () => {
@@ -364,7 +364,7 @@ describe('getMode', () => {
       },
     });
 
-    const mode: Promise<string> = hiscores.getMode(player);
+    const mode: Promise<PlayerMode> = hiscores.getMode(player);
 
     await expect(mode).rejects.toThrow(ServiceUnavailableError);
   });
