@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/osrslogs/osrs-hiscores/compare/v1.1.0...v1.1.1) (2020-03-14)
+
+
+### Bug Fixes
+
+* fix vulnerability in jest sub-dependency ([9ace363](https://github.com/osrslogs/osrs-hiscores/commit/9ace363ffb0783b91fc08e5a30cf27765f03a072))
+
 # [1.1.0](https://github.com/osrslogs/osrs-hiscores/compare/v1.0.4...v1.1.0) (2020-03-11)
 
 
