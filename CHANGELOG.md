@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/osrslogs/osrs-hiscores/compare/v1.1.1...v1.1.2) (2020-12-04)
+
+
+### Bug Fixes
+
+* update user agent ([#17](https://github.com/osrslogs/osrs-hiscores/issues/17)) ([aa3e547](https://github.com/osrslogs/osrs-hiscores/commit/aa3e547cba608546f37387b353ea0399bb30af32))
+
 ## [1.1.1](https://github.com/osrslogs/osrs-hiscores/compare/v1.1.0...v1.1.1) (2020-03-14)
 
 
