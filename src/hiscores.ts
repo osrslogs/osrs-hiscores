@@ -18,9 +18,7 @@ import { getRankedStat } from './util/stats';
 import { InvalidPlayerError } from './util/error';
 
 class Hiscores {
-  readonly config: Config = {
-    userAgent: 'osrs-hiscores',
-  };
+  readonly config: Config = {};
 
   constructor(config?: Config) {
     this.config = { ...this.config, ...config };
