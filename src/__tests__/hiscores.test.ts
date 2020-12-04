@@ -20,8 +20,6 @@ const mockAxios = mocked(axios, true);
 const player = 'zezima';
 
 describe('constructor', () => {
-  const defaultUserAgent = 'osrs-hiscores';
-
   it('creates an object with UA config', () => {
     const expected = {
       userAgent: 'hello world',
@@ -40,7 +38,6 @@ describe('constructor', () => {
     const result: Hiscores = new Hiscores(expected);
 
     expect(result.config.timeout).toEqual(expected.timeout);
-    expect(result.config.userAgent).toEqual(defaultUserAgent);
   });
 
   it('creates an object with proxy config', () => {
@@ -54,17 +51,6 @@ describe('constructor', () => {
     const result: Hiscores = new Hiscores(expected);
 
     expect(result.config.proxy).toEqual(expected.proxy);
-    expect(result.config.userAgent).toEqual(defaultUserAgent);
-  });
-
-  it('creates an object without config', () => {
-    const expected = {
-      userAgent: defaultUserAgent,
-    };
-
-    const result: Hiscores = new Hiscores();
-
-    expect(result.config).toEqual(expected);
   });
 });
 
