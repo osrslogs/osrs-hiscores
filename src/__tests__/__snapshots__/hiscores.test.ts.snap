@@ -102,19 +102,19 @@ Object {
 exports[`getSkillPage it returns skillrows with default page and mode 1`] = `
 Array [
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
@@ -125,19 +125,19 @@ Array [
 exports[`getSkillPage returns skillrows on default page and specific mode 1`] = `
 Array [
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
@@ -148,19 +148,19 @@ Array [
 exports[`getSkillPage returns skillrows on specific page and default mode 1`] = `
 Array [
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,
   },
   Object {
-    "experience": 200,
+    "experience": 200000000,
     "level": 99,
     "name": "Sathon",
     "rank": 1,

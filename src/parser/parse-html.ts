@@ -23,7 +23,7 @@ const textFromElement = (element: CheerioElement | undefined): string => {
  */
 const numberFromElement = (element: CheerioElement): number => {
   const innerText = element.firstChild.data;
-  const number = innerText ? innerText.replace(/[\n],]/g, '') : '-1';
+  const number = innerText ? innerText.replace(/,/g, '') : '-1';
   return parseInt(number, 10);
 };
 
