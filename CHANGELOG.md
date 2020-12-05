@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/osrslogs/osrs-hiscores/compare/v1.1.2...v1.1.3) (2020-12-05)
+
+
+### Bug Fixes
+
+* parsing of comma separated numbers ([#19](https://github.com/osrslogs/osrs-hiscores/issues/19)) ([e459040](https://github.com/osrslogs/osrs-hiscores/commit/e459040534630485d949259741dd3bcb42e48622))
+
 ## [1.1.2](https://github.com/osrslogs/osrs-hiscores/compare/v1.1.1...v1.1.2) (2020-12-04)
 
 
